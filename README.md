@@ -1,9 +1,12 @@
-#Objective:
+# Objective:
 Create an Angular-based project that utilizes the provided .geojson files and displays them on a map using the OpenLayers JavaScript library. The application should provide the following functionality:
 
 • Load .geojson data: Import the provided .geojson files into your project.
+
 • Initialize the OpenLayers map: Create a map using the OpenLayers library, and display the .geojson data on the map.
+
 • Zoom to a graveyard: Implement a dropdown menu that lists all the graveyards in the .geojson data. The graveyard field is named "friedhof" in the attributes of the provided file. When a user selects a graveyard from the dropdown menu, the map should zoom to the selected graveyard's extent.
+
 • Style graves based on grabstatus: Create individual color styling for the graves based on the unique values of the "grabstatus" field. Make sure each unique value is represented by a different color.
 
 # OpenlayersAngular
