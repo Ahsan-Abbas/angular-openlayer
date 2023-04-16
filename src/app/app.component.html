@@ -1,0 +1,21 @@
+<header>
+  <div class="title">Graveyard Map</div>
+</header>
+<main>
+  <div class="left-bar">
+    <div>
+      <label for="graveyard-select">Select a graveyard:</label>
+      <select id="graveyard-select" [(ngModel)]="selectedGraveyard">
+        <option *ngFor="let graveyard of graveyards" [value]="graveyard.value">{{ graveyard.label }}</option>
+      </select>
+      <div id="map"></div>
+    </div>      
+  </div>
+  <div class="map-container">
+    <app-map [map]="map"></app-map>
+  </div>
+</main>
+<footer>
+  <app-scaleline [map]="map"></app-scaleline>
+  <app-mouse-position [map]="map" positionTemplate="{x}, {y} m"></app-mouse-position>
+</footer>

@@ -1,0 +1,1 @@
+{"ast":null,"code":"function countSubstring(string, substring) {\n  const pattern = new RegExp(substring, \"g\");\n  const match = string.match(pattern);\n  return match ? match.length : 0;\n}\nmodule.exports = countSubstring;\nmodule.exports.default = countSubstring;","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

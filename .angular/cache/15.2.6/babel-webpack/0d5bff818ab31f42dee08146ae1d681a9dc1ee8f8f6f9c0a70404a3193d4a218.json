@@ -1,0 +1,1 @@
+{"ast":null,"code":"import BaseDecoder from './basedecoder.js';\nclass RawDecoder extends BaseDecoder {\n  decodeBlock(buffer) {\n    return buffer;\n  }\n}\nexport { RawDecoder as default };","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
