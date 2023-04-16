@@ -66,6 +66,7 @@ export class AppComponent implements OnInit {
         graveyardsSet.add(feature.get('friedhof'));
       });
 
+      // Apply random color to each grave on the basis of grabstatus
       features.forEach((feature: Feature) => {
         const grabstatus = feature.get('grabstatus');
         if (!this.styles[grabstatus]) {
@@ -87,6 +88,7 @@ export class AppComponent implements OnInit {
       });
       this.map.addLayer(vectorLayer);
 
+      
       this.graveyardList = Array.from(graveyardsSet);
       console.log(this.graveyardList);
 
