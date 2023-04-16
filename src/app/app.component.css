@@ -4,8 +4,9 @@
   height: 100vh;
 }
 header {
-  background-color: var(--header-color);
-  padding: 2em;
+  background-color: #41b0b9;
+  padding: 1rem;
+  color: #ffffff;
 }
 header .title {
   font-size: 28px;
@@ -15,15 +16,31 @@ main {
   flex-grow: 1;
 }
 .left-bar {
-  width: 20em;
-  background-color: var(--sidebar-color);
+  width: 15rem;
+  padding: 1rem;
+  background-color: #efefef;
+  border-right: 1px solid #bfbfbf;
 }
+
+.left-bar h3 {
+  margin-top: 0!important
+}
+
+.left-bar select {
+  width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    padding: 0.25rem;
+    margin: 10px 0; 
+}
+
 .map-container {
   flex-grow: 1;
 }
 footer {
   display: flex;
-  background-color: var(--header-color);
-  padding: 1em;
+  background-color: #41b0b9;
+  padding: 0.75rem;
   justify-content: space-between;
+  color: #ffffff;
 }

@@ -1,9 +1,10 @@
 <header>
-  <div class="title">Graveyard Map</div>
+  <div class="title">Angular and OpenLayers Project - PBSGeo GmbH</div>
 </header>
 <main>
   <div class="left-bar">
     <div>
+      <h3>Graveyard Map</h3>
       <label for="graveyard-select">Select a graveyard:</label>
       <select id="graveyard-select" [(ngModel)]="selectedGraveyard">
         <option *ngFor="let graveyard of graveyards" [value]="graveyard.value">{{ graveyard.label }}</option>

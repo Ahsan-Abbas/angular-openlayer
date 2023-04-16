@@ -88,7 +88,7 @@ export class AppComponent implements OnInit {
       });
       this.map.addLayer(vectorLayer);
 
-      
+      // Converting graveyad set data into list
       this.graveyardList = Array.from(graveyardsSet);
       console.log(this.graveyardList);
 
