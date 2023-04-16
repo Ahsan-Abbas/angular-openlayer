@@ -106,13 +106,6 @@ export class AppComponent implements OnInit {
         this.view.fit(extent, { duration: 1000, maxZoom: 18 });
       });
     });
-
-    // const vectorLayer = new VectorLayer({
-    //   source: new VectorSource({
-    //     features: new GeoJSON().readFeatures(this.dropdownData)
-    //   }),
-    //   style: this.dropdownService.getGraveStyleFunction()
-    // });
   }
 
   // Get the extent for a given graveyard name
@@ -123,28 +116,8 @@ export class AppComponent implements OnInit {
       if (feature.get('friedhof') === graveyardName) {
         const geometry = feature.getGeometry();
         geometry.getExtent(extent);
-        //console.log(geometry);
       }
     });
     return extent;
   }
 }
-
-/* this.dropdownData
-      .getSource()
-      .getFeatures()
-      .map((feature) => {
-        let r = Math.round(Math.random() * 255);
-        let g = Math.round(Math.random() * 255);
-        let b = Math.round(Math.random() * 255);
-        feature.setStyle(
-          new Style({
-            fill: new Fill({
-              color: `rgba(${r}, ${g}, ${b}, .7)`,
-            }),
-            stroke: new Stroke({
-              color: `rgb(${r}, ${g}, ${b})`,
-            }),
-          })
-        );
-      }); */
