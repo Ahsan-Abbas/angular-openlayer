@@ -1,5 +1,5 @@
 <header>
-  <div class="title">Angular and OpenLayers Project - PBSGeo GmbH</div>
+  <div class="title">Angular and OpenLayers Project</div>
 </header>
 <main>
   <div class="left-bar">
@@ -7,10 +7,12 @@
       <h3>Graveyard Map</h3>
       <label for="graveyard-select">Select a graveyard:</label>
       <select id="graveyard-select" [(ngModel)]="selectedGraveyard">
-        <option *ngFor="let graveyard of graveyards" [value]="graveyard.value">{{ graveyard.label }}</option>
+        <option *ngFor="let graveyard of graveyards" [value]="graveyard.value">
+          {{ graveyard.label }}
+        </option>
       </select>
       <div id="map"></div>
-    </div>      
+    </div>
   </div>
   <div class="map-container">
     <app-map [map]="map"></app-map>
@@ -18,5 +20,8 @@
 </main>
 <footer>
   <app-scaleline [map]="map"></app-scaleline>
-  <app-mouse-position [map]="map" positionTemplate="{x}, {y} m"></app-mouse-position>
+  <app-mouse-position
+    [map]="map"
+    positionTemplate="{x}, {y} m"
+  ></app-mouse-position>
 </footer>

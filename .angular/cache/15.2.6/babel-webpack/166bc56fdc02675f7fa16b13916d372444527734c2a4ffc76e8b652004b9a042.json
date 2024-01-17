@@ -1,0 +1,1 @@
+{"ast":null,"code":"function indexOfMatch(xml, pattern, startIndex) {\n  const re = new RegExp(pattern);\n  const match = re.exec(xml.slice(startIndex));\n  if (match) return startIndex + match.index;else return -1;\n}\nmodule.exports = indexOfMatch;\nmodule.exports.default = indexOfMatch;","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"/* ignore unused exports */\n\nexport { Float16Array, isFloat16Array } from \"./Float16Array.mjs\";\nexport { isTypedArray } from \"./isTypedArray.mjs\";\nexport { getFloat16, setFloat16 } from \"./DataView.mjs\";\nexport { f16round, f16round as hfround } from \"./f16round.mjs\";","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
